@@ -1,0 +1,13 @@
+Primeiro passo: Construir a estrutura do website criando todas as pastas ao lado
+Quando a estrutura é construída assim, ao importar em um dos arquivos você tem um pacote que será rodado toda vez.
+
+Segundo passo: iniciar a aplicação (olhar init e main)
+
+Terceiro passo: Criar as rotas
+(SEMPRE RODAR PELA MAIN)
+
+Quarto passo: Começar a criar o template. Usaremos jinga que permite misturar HTML e Python
+Sobre o block title:
+The include tag should be considered as an implementation of “render this subtemplate and include the HTML”, not as “parse this subtemplate and include its contents as if it were part of the parent”. This means that there is no shared state between included templates – each include is a completely independent rendering process.
+
+Blocks are evaluated before they are included. This means that a template that includes blocks from another will contain blocks that have already been evaluated and rendered - not blocks that can be overridden by, for example, an extending template.
