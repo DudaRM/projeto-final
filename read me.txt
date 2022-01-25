@@ -11,3 +11,6 @@ Sobre o block title:
 The include tag should be considered as an implementation of “render this subtemplate and include the HTML”, not as “parse this subtemplate and include its contents as if it were part of the parent”. This means that there is no shared state between included templates – each include is a completely independent rendering process.
 
 Blocks are evaluated before they are included. This means that a template that includes blocks from another will contain blocks that have already been evaluated and rendered - not blocks that can be overridden by, for example, an extending template.
+
+Pasta inside: Coisas que não vão mudar, como o CSS, imagens e etc
+{{}} pra escrever coisa em HTML
