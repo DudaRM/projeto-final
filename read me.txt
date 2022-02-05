@@ -14,4 +14,8 @@ Blocks are evaluated before they are included. This means that a template that i
 
 Pasta inside: Coisas que não vão mudar, como o CSS, imagens e etc
 {{}} pra escrever coisa em HTML
-42 min
+
+base.html o que iremos usar (bootstrap e afins)
+
+HTTP 
+post - enviamos toda a informação para o server
