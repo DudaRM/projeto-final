@@ -1,4 +1,7 @@
-from flask import Blueprint, render_template, request
+from flask import Blueprint, render_template, request, flash
+from .models import User
+from werkzeug.security import generate_password_hash,check_password_hash
+
 #para definir que teremos vários caminhos auqi
 
 auth = Blueprint('auth', __name__)
@@ -32,5 +35,7 @@ def signup():
             flash('Password must be at least 7 characters.', category ='error')
         else:
             #add user to databases
-            pass
+            new_user = User(email=email, firstName=firstName,password=generate_password_hash(password1, method='sha256'))
+            flash('Account created!', category='success')
+
     return render_template("sign_up.html")

@@ -19,3 +19,15 @@ base.html o que iremos usar (bootstrap e afins)
 
 HTTP 
 post - enviamos toda a informação para o server
+
+{% with messages = get_flashed_messages(with_categories=true)%}
+        {% endwith %}
+
+        pega todas as mensagens do Flash
+
+        &times; fancy X
+
+        db.Model ->> objeto
+
+        para relacionar user e note precisa de uma chave estrangeira
+        
