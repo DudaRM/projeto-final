@@ -31,3 +31,13 @@ post - enviamos toda a informação para o server
 
         para relacionar user e note precisa de uma chave estrangeira
         
+
+        function deleteNote(noteId){
+    fetch('/delete-note', {
+        method: 'POST',
+        body: JSON.stringify({noteId:noteId})
+    
+    }).then((_res) => {
+        window.location.href = "/"; reload de window
+    })
+}
