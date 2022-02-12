@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Questionário</title>
+        <meta charset="utf-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1"/>
+        <link rel="stylesheet" href="..\css\style.css">
+    </head>
+    <body>
+        <div class="home-box custom-box hide">
+            <h3>Instruções:</h3>
+            <p>Número total de questões: <span class="total-question">5</span></p>
+            <button type="button" class="btn">Começar questionário</button>
+        </div>
+        <div class="quiz-box custom-box">
+            <div class="question-number">
+                Questão 1 de 5
+            </div>
+            <div class="question-text">
+                Como você se sente essa semana?
+            </div>
+            <div class="option-container">
+                <div class="option">Muito bem</div>
+                <div class="option">Bem</div>
+                <div class="option">Mal</div>
+                <div class="option">Muito mal</div>
+            </div>
+            <div class="next-question-btn">
+                <button type="button" class="btn">Próximo</button>
+            </div>
+            <div class="answers-indicator">
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+        </div>
+        <!------Resultado do questionario ----->
+        <div class="result-box custom-box hide">
+            <h1>Resultado</h1>
+            <table>
+                <tr>
+                    <td>Total</td>
+                    <td><span class="total-question">5</span></td>
+                </tr>
+                <tr>
+                    <td>Tentativa</td>
+                    <td><span class="total-attempt">4</span></td>
+                </tr>
+                <tr>
+                    <td>Corretas</td>
+                    <td><span class="total-correct">3</span></td>
+                </tr>
+                <tr>
+                    <td>Erradas</td>
+                    <td><span class="total-wrong">1</span></td>
+                </tr>
+                <tr>
+                    <td>Porcentagem</td>
+                    <td><span class="percentage">60.00%</span></td>
+                </tr>
+                <tr>
+                    <td>Seu Score total</td>
+                    <td><span class="total-score">3 / 5</span></td>
+                </tr>                
+            </table>
+            <button type="button" class="btn">Tentar de novo</button>
+            <button type="button" class="btn">Voltar para página inicial</button>
+        </div>
+    </body>
+</html>
