@@ -95,7 +95,7 @@ body{
 
 .quiz-box .option-container .option{
     background-color: #cccccc;
-    padding: 15px;
+    padding:13px 15px;
     font-size: 16px;
     line-height: 22px;
     color: #000000;
@@ -103,7 +103,29 @@ body{
     margin-bottom: 10px;
     cursor: pointer;
     text-transform: capitalize;
+    opacity: 0;
+    animation: fadeIn 0.3s ease forwards;
+    position: relative;
+    overflow: hidden;
     
+}
+@keyframes fadeIn{
+    0%{
+        opacity:0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+.quiz-box .option-container .option.correct::before{
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background-color: green;
 }
 .quiz-box .btn{
     margin: 15px 0; 
