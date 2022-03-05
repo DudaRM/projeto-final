@@ -24,5 +24,9 @@ const quiz = [
     q:'Como você classifica seu humor durante o dia de trabalho?',
     options:['Muito bom','Bom','Regular','Ruim','Muito ruim'],
     answer:2
+,
+    q:'Como você classifica seu humor durante o dia de trabalho?',
+        options:['Muito bom','Bom','Regular','Ruim','Muito ruim'],
+        answer:0
 }
 ]
