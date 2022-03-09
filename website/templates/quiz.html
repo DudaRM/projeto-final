@@ -10,25 +10,34 @@
         <div class="home-box custom-box">
             <h3>Instruções:</h3>
             <p>Número total de questões: <span class="total-question"></span></p>
+            <p>Insira seu nome: 
+                <input class="nome" name="nome" required="required" type="text" placeholder="Digite seu nome:" />
+            </p>
             <button type="button" class="btn" onclick="startQuiz()">Começar questionário</button>
         </div>
-        <div class="quiz-box custom-box hide">
-            <div class="question-number">
-                
+        <form method="post" action="">
+            <div class="quiz-box custom-box hide">
+                <div class="question-number">
+                    
+                </div>
+                <div class="question-text">
+                    
+                </div>
+                <div class="option-container">
+                    
+                </div>
+                <div class="comments">
+                    <label for="comentario">Por que se sente dessa forma?(Não obrigatório)</label>
+                    <input id="comentario" name="comentario" required="required" type="text" placeholder="Digite aqui seu comentário:">
+                </div>
+                <div class="next-question-btn">
+                    <button type="button" class="btn" onclick="next()">Próximo</button>
+                </div>
+                <div class="answers-indicator">
+                    
+                </div>
             </div>
-            <div class="question-text">
-                
-            </div>
-            <div class="option-container">
-                
-            </div>
-            <div class="next-question-btn">
-                <button type="button" class="btn" onclick="next()">Próximo</button>
-            </div>
-            <div class="answers-indicator">
-                
-            </div>
-        </div>
+        </form>
         <!------Resultado do questionario ----->
         <div class="result-box custom-box hide">
             <h1>Resultado</h1>

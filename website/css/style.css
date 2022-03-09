@@ -3,7 +3,7 @@
 body{
     margin: 0;
     font-size: 16px;
-    background-color: #009688;
+    background-color: #04beac;
     font-family: 'Montserrat', sans-serif;
     font-weight: 400;
 }
@@ -14,6 +14,7 @@ body{
     padding: 0;
     outline: none;
 }
+
 
 .custom-box{
     max-width: 700px;
@@ -67,6 +68,7 @@ body{
 .home-box .btn{
     margin-top: 20px;
 }
+
 .btn{
     padding: 15px 45px;
     background-color: #009688;
@@ -83,7 +85,8 @@ body{
 .quiz-box .question-text,
 .quiz-box .option-container,
 .quiz-box .next-question-btn, 
-.quiz-box .answers-indicator{
+.quiz-box .answers-indicator,
+.quiz-box .comments{
     width: 100%;
     float: left;
 } 
@@ -95,6 +98,7 @@ body{
     padding-bottom: 10px;
     line-height: 25px ;
 }
+.quiz-box .comments,
 .quiz-box .question-text{
     font-size: 22px;
     color: #000000;
@@ -201,6 +205,36 @@ body{
 .quiz-box .answers-indicator div.wrong{
     background-color: red;
 }
+
+.home-box input,
+.quiz-box input{
+    font-family: 'Montserrat', sans-serif;
+    width: 100%;
+    height: 100%;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    /* Para harmonizar o look & feel das bordas nos campos de texto*/
+    border: 1px solid #999;
+    background-color: #ece6e6;
+    padding:13px 15px;
+    font-size: 16px;
+    line-height: 22px;
+    color: #000000;
+    border-radius: 5px;
+    margin-bottom: 0;
+    margin-top: 15px;
+    cursor: pointer;
+    opacity: 0;
+    animation: fadeIn 0.3s ease forwards;
+    position: relative;
+    overflow: hidden;
+}
+
+input:focus {
+    /* Destaque nos elementos ativos */
+    border-color: #000;
+}
+
 .result-box{
     text-align: center;
 }
