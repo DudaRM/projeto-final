@@ -29,7 +29,7 @@ def login():#bom chamar do mesmo nome da root
     return render_template("login.html", user=current_user)
 
 @auth.route('/logout')
-#obrigada o user estar logado para fazer o resto
+#obrigando o user estar logado para fazer o resto
 @login_required
 def logout():
     logout_user()

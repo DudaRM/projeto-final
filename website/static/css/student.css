@@ -1,0 +1,212 @@
+@media screen{
+    a:link {
+      text-decoration: none;
+    }
+
+    body {
+      margin: 0;
+      padding: 0;
+      font-size: 16px;
+      background-color: #ffffff;
+      font-family: 'Montserrat', sans-serif;
+      font-weight: 400;
+    }
+
+    header {
+      position: fixed;
+      background: #292b2c;
+      padding: 20px;
+      width: 100%;
+      z-index: 1;
+    }
+
+    .left_area h3 {
+      color: #fff;
+      margin: 10px;
+      text-align: justify;
+      font-size: 1.8rem;
+      font-weight: 500;
+    }
+
+    .left_area span {
+      color: #38d39f;
+    }
+
+    .logout_btn {
+      padding: 5px;
+      width: 80px;
+      text-align:center ;
+      text-decoration: none;
+      float: right;
+      margin-top: -30px;
+      margin-right: 40px;
+      border-radius: 25px;
+      font-size: 1.2rem;
+      font-weight: 600;
+      color: #fff;
+      cursor:pointer ;
+      font-family:'Montserrat', sans-serif;
+      text-transform: uppercase ;
+      background-image: linear-gradient(to right, #32be8f, #38d39f, #32be8f);
+      background-size: 200%;
+      transition: .5s;
+
+    }
+
+    .logout_btn:hover {
+      background-position: right;
+    }
+
+    .sidebar {
+      background: #292b2c;
+      margin-top: 70px;
+      padding-top: 30px;
+      position: fixed;
+      left: 0;
+      width: 250px;
+      height: 100%;
+      transition: 0.5s;
+      transition-property: left;
+    }
+
+    .sidebar .profile_image {
+      width: 100px;
+      height: 100px;
+      border-radius: 100px;
+      margin-bottom: 10px;
+    }
+
+    .sidebar h4 {
+      color: #ccc;
+      margin-top: 0;
+      
+    }
+
+    .sidebar a {
+      color: #fff;
+      display: block;
+      width: 100%;
+      line-height: 60px;
+      text-decoration: none;
+      padding-left: 40px;
+      box-sizing: border-box;
+      transition: 0.5s;
+
+    }
+
+    .sidebar a:hover {
+      background: #38d39f;
+    }
+
+    .sidebar i {
+      padding-right: 10px;
+    }
+
+    label #sidebar_btn {
+      z-index: 1;
+      color: #fff;
+      position: fixed;
+      cursor: pointer;
+      left: 215px;
+      font-size: 20px;
+      margin: 5px 0;
+      transition: 0.5s;
+      transition-property: color;
+    }
+
+    label #sidebar_btn:hover {
+      color: #38d39f;
+    }
+
+    #check:checked~.sidebar {
+      left: -190px;
+    }
+
+    #check:checked~.sidebar a span {
+      display: none;
+    }
+
+    #check:checked~.sidebar a {
+      font-size: 20px;
+      margin-left: 170px;
+      width: 80px;
+    }
+
+    .content {
+      margin-left: 250px;
+      background: url(background.png) no-repeat;
+      background-position: center;
+      background-size: cover;
+      height: 100vh;
+      transition: 0.5s;
+      text-align: start;
+    }
+
+    #check:checked~.content {
+      margin-left: 60px;
+    }
+
+    #check {
+      display: none;
+    }
+    /*emotional*/
+    .box {
+      display: flex;
+      width: 100%;
+      background-color: #fff;
+      justify-content: center;
+      border-radius: 10px;
+      margin: 5px 0;
+    }
+
+    .box-atividades{
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      height: 150px;
+      background-color: #fff;
+      justify-content: center;
+      align-items: center;
+      border-radius: 10px;
+      margin: 5px 0;
+    }
+
+    .img-humor{
+      width:70px;
+      height:70px;
+      padding: 5px;
+    }
+
+    .box a:hover{
+      opacity: 0.5;
+      cursor:pointer;
+      text-decoration: none;
+    }
+
+    .content h3{
+      color: #38d39f;
+      margin: 10px;
+      text-align: center;
+      font-size: 1.8rem;
+      font-weight: 500;
+    }
+
+    a h4{
+      font-size: 16px;
+      font-weight: 500;
+      justify-content: center;
+      display: flex;
+
+    }
+    .atividades{
+      text-align: center;
+    }
+
+    .title-activities{
+      color: #38d39f;
+      text-align: center;
+      font-size: 16px;
+      font-weight: 500;
+      text-decoration: none;
+    }
+}

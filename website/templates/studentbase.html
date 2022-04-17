@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<!--{% load static %}-->
+<html lang="pt-br">
+    <head>
+        <title>Menu aluno</title>
+        <meta charset="utf-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1"/>
+        <link rel="stylesheet" href="..\static\css\style.css">
+        <link rel="stylesheet" href="..\static\css\student.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css">
+    </head>
+
+<body>
+  <input type="checkbox" id="check">
+  <!--header area start-->
+  <header style="padding-top:0px;">
+    <label for="check">
+      <i style="margin-top: 17px;"class="fas fa-bars" id="sidebar_btn"></i>
+    </label>
+    <div class="left_area">
+      <h3>Bem-vindo!</h3>
+    </div>
+    <div class="right_area">
+      <a class="logout_btn" href="/logout">Sair</a>
+    </div>
+  </header>
+  <!--header area end-->
+  <!--sidebar start-->
+  <div class="sidebar" style="margin-top:50px;">
+    <center>
+
+      <img src="{{url_for('static', filename='img/student.png')}}" class="profile_image" alt="">
+      <!--<h4>{{request.user.first_name}}</h4>-->
+      <h6 style="color: rgb(255, 255, 255);">( Student )</h6>
+
+    </center>
+
+    <a href="/student/student-dashboard"><i class="fas fa-tachometer-alt"></i><span>Dashboard</span></a>
+    <a href="/student/student-form"><i class="fas fa-book"></i><span>Pesquisas</span></a>
+    <a href="/student/student-feedback"><i class="fas fa-sticky-note"></i><span>Feedback</span></a>
+    <a href="/student/student-emotional"><i class="fas fa-smile"></i><span>Termômetro emocional</span></a>
+    <a href="/student/student-evatuation"><i class="fas fa-sort-numeric-up"></i><span>Desempenho</span></a>
+    <a href="/student/student-meetings"><i class="fas fa-people-carry"></i><span>Reuniões</span></a>
+
+  </div>
+  <!--sidebar end-->
+
+
+  <!--content start-->
+  <div class="content">
+    <br><br><br><br><br>
+   <!-- {% block content %}-->
+
+    <!--{% endblock content %}-->
+
+
+    <br><br><br>
+    <!--{% include "footer.html" %}-->
+  </div>
+  <!--content end-->
+</body>
+
+</html>

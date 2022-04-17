@@ -4,18 +4,18 @@
         <title>Questionário</title>
         <meta charset="utf-8"/>
         <meta name="viewport" content="width=device-width, initial-scale=1"/>
-        <link rel="stylesheet" href="..\css\style.css">
+        <link rel="stylesheet" href="..\static\css\style.css">
     </head>
     <body>
-        <div class="home-box custom-box">
-            <h3>Instruções:</h3>
-            <p>Número total de questões: <span class="total-question"></span></p>
-            <p>Insira seu nome: 
-                <input class="nome" name="nome" required="required" type="text" placeholder="Digite seu nome:" />
-            </p>
-            <button type="button" class="btn" onclick="startQuiz()">Começar questionário</button>
-        </div>
         <form method="post" action="">
+            <div class="home-box custom-box">
+                <h3>Instruções:</h3>
+                <p>Número total de questões: <span class="total-question"></span></p>
+                <p>Insira seu nome: 
+                    <input class="nome" name="nome" required="required" type="text" placeholder="Digite seu nome:" />
+                </p>
+                <button type="button" class="btn" onclick="startQuiz()">Começar questionário</button>
+            </div>
             <div class="quiz-box custom-box hide">
                 <div class="question-number">
                     

@@ -7,21 +7,18 @@
         rel="stylesheet"
         href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
         integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
-        crossorigin="anonymous"
-      />
+        crossorigin="anonymous"/>
       <link
         rel="stylesheet"
         href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
-        crossorigin="anonymous"
-      />
-
-      <title>{% block title %}{% endblock %}</title>
-
+        crossorigin="anonymous"/>
+        <script src="https://kit.fontawesome.com/a81368914c.js"></script>
+        <script src="../static/login.js"></script>
         
+      <title>{% block title %}{% endblock %}</title>       
 
     </head>
     <body>
-
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar">
             <span class="navbar-toggler-icon"></span>
@@ -30,17 +27,17 @@
             <div class="navbar-nav">
               {% if user.is_authenticated %}
               <a class="nav-item nav-link" id="home" href="/">Home</a>
-              <a class="nav-item nav-link" id="logout" href="/logout">Logout</a>
+              <a class="nav-item nav-link" id="logout" href="/logout">Sair</a>
               {% else %}
-              <a class="nav-item nav-link" id="login" href="/login">Login</a>
-              <a class="nav-item nav-link" id="signUp" href="/sign-up">Sign Up</a>
+              <a class="nav-item nav-link" id="login" href="/login">Login aluno</a>
+              <a class="nav-item nav-link" id="login" href="/login">Login admin</a>
+              <a class="nav-item nav-link" id="signUp" href="/sign-up">Cadastrar</a>
               {% endif %}
                          
             </div>
           </div>
         </nav>
-       
-
+      
         {% with messages = get_flashed_messages(with_categories=true)%}
         {% if messages %}
           {% for category , message in messages %}
@@ -62,11 +59,16 @@
           {% endfor %}
         {% endif %}    
         {% endwith %}
-        <div class="container">
+        <div class="content">
           {% block content %}
           {% endblock %}
+
+          <br><br><br>
+          {% include "footer.html" %}
         </div>
 
+
+        <!--scripts-->
         <script
         src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
         integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"

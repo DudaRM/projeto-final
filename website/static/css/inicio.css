@@ -1,0 +1,42 @@
+/*Estilo tela principal*/
+.container-options{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center; 
+    align-content: center;  
+}
+.options{
+    width: 30%;
+}
+
+h1{
+    font-weight: 200;
+    
+}
+
+main{
+    display: flex;
+    flex-direction: row;
+}
+.option-box{
+    max-width: 700px;
+    height: auto;
+    background-color: #ffffff;
+    margin: 40px auto;
+    padding: 30px;
+    border-radius: 10px;
+    animation: fadeInRight 1s ease;
+}
+
+@keyframes fadeInRight{
+0%{
+    transform: translateX(40px);
+    opacity: 0;
+}
+100%{
+    transform: translateX(0px);
+    opacity: 1;
+}
+}
